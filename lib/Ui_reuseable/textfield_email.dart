@@ -11,13 +11,13 @@ class TextfieldEmail extends StatelessWidget {
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(color: Colors.transparent),
+            borderSide: BorderSide.none,
           ),
           contentPadding:
               const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(color: Colors.grey.shade300, width: 1.5),
+            borderSide: BorderSide.none,
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(25.0),

@@ -17,11 +17,11 @@ class TextfielName extends StatelessWidget {
               const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(color: Colors.grey.shade300, width: 1.5),
+            borderSide: BorderSide.none,
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(25.0),
-            borderSide: const BorderSide(color: Colors.blue, width: 2.0),
+            borderSide: BorderSide.none,
           ),
           fillColor: Colors.white,
           filled: true,

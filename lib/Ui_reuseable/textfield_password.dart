@@ -1,23 +1,31 @@
 import 'package:flutter/material.dart';
 
-class TextfieldPassword extends StatelessWidget {
+class TextfieldPassword extends StatefulWidget {
   const TextfieldPassword({super.key});
+
+  @override
+  State<TextfieldPassword> createState() => _TextfieldPasswordState();
+}
+
+class _TextfieldPasswordState extends State<TextfieldPassword> {
+  bool ispasswordvisable = false;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: 14, right: 14),
       child: TextField(
+        obscureText: !ispasswordvisable,
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
             borderSide: BorderSide(color: Colors.transparent),
           ),
           contentPadding:
-              const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10),
+              const EdgeInsets.symmetric(vertical: 6.0, horizontal: 10),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide(color: Colors.grey.shade300, width: 1.5),
+            borderRadius: BorderRadius.circular(20.0),
+            borderSide: BorderSide.none,
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(25.0),
@@ -30,6 +38,17 @@ class TextfieldPassword extends StatelessWidget {
             fontSize: 17.0,
             color: Colors.grey,
             fontStyle: FontStyle.italic,
+          ),
+          suffix: IconButton(
+            onPressed: () {
+              setState(() {
+                ispasswordvisable = !ispasswordvisable;
+              });
+            },
+            icon: Icon(
+              ispasswordvisable ? Icons.visibility : Icons.visibility_off,
+              color: Colors.black,
+            ),
           ),
         ),
       ),

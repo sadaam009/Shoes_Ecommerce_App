@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shoes/Components/intro_page.dart';
 import 'package:shoes/Components/intro_page1.dart';
 import 'package:shoes/Components/intro_page2.dart';
-import 'package:shoes/Components/signup.dart';
+
 import 'package:shoes/Components/singin.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 

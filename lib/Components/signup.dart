@@ -93,14 +93,7 @@ class Signup extends StatelessWidget {
           //  //TextField Password
           TextfieldPassword(),
           //TextField Password
-          Padding(
-            padding: const EdgeInsets.only(left: 240, top: 10),
-            child: Text(
-              "Recovery Password",
-              style: GoogleFonts.poppins(
-                  color: Color.fromARGB(255, 112, 123, 129)),
-            ),
-          ),
+
           SizedBox(height: 35),
           Container(
             margin: EdgeInsets.only(left: 20, right: 20),

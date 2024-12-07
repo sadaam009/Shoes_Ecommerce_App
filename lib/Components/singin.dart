@@ -96,7 +96,7 @@ class Singin extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 50),
+          SizedBox(height: 30),
           Container(
             margin: EdgeInsets.only(left: 20, right: 20),
             width: 300,

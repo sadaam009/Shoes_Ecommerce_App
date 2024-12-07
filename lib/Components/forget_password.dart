@@ -14,12 +14,17 @@ class ForgetPassword extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 30, right: 325),
-            child: Container(
-              width: 200,
-              height: 50,
-              decoration:
-                  BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-              child: Icon(Icons.arrow_back_ios_new),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Container(
+                width: 200,
+                height: 50,
+                decoration:
+                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                child: Icon(Icons.arrow_back_ios_new),
+              ),
             ),
           ),
           GestureDetector(
